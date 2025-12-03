@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Happy Chabby</title>
+    <meta name="description" content="Privacy Policy for Happy Chabby - Learn how we collect, use, and protect your data.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sky-blue: #81D4FA;
+            --primary-blue: #039BE5;
+            --deep-blue: #0288D1;
+            --bright-orange: #FF9100;
+            --soft-blue: #E1F5FE;
+            --cyan-tint: #E0F7FA;
+            --mint: #69F0AE;
+            --sunny-yellow: #FFEE58;
+            --dark-text: #263238;
+            --medium-text: #546E7A;
+            --water-blue: #4FC3F7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--dark-text);
+            background: linear-gradient(180deg, var(--cyan-tint) 0%, var(--soft-blue) 50%, #fff 100%);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--medium-text);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--deep-blue) 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(3, 155, 229, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(3, 155, 229, 0.4);
+        }
+
+        /* Privacy Content */
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .privacy-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--deep-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .last-updated {
+            color: var(--medium-text);
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .privacy-content h2 {
+            font-size: 1.5rem;
+            color: var(--dark-text);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-content p {
+            color: var(--medium-text);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-content ul {
+            color: var(--medium-text);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .privacy-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .privacy-content a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .privacy-content a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .highlight-box h3 {
+            font-size: 1.1rem;
+            color: var(--dark-text);
+            margin-bottom: 0.75rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-text);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .footer-logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-copy {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .privacy-content h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-content h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">
+            <img src="../assets/images/mascot/hydration-states/mid.png" alt="Chabby">
+            Happy Chabby
+        </a>
+        <ul class="nav-links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#mascot">Meet Chabby</a></li>
+            <li><a href="/#achievements">Achievements</a></li>
+        </ul>
+        <a href="/#download" class="cta-button">Download Free</a>
+    </nav>
+
+    <!-- Privacy Policy Content -->
+    <main class="privacy-content">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: December 3, 2025</p>
+
+        <p>Happy Chabby ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+
+        <h2>Information We Collect</h2>
+
+        <div class="highlight-box">
+            <h3>Information You Provide</h3>
+            <ul>
+                <li><strong>Profile Information:</strong> Name (optional), weight, and activity level to calculate your personalized hydration goals</li>
+                <li><strong>Hydration Data:</strong> Drink logs including beverage type, amount, and timestamps</li>
+                <li><strong>Preferences:</strong> Daily hydration goals, reminder settings, and measurement unit preferences</li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Information Collected Automatically</h3>
+            <ul>
+                <li><strong>Usage Data:</strong> How you interact with the app, including features used and achievements earned</li>
+                <li><strong>Device Information:</strong> Device type and operating system for app optimization</li>
+            </ul>
+        </div>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Calculate and track your daily hydration goals</li>
+            <li>Provide personalized recommendations based on your activity level and weight</li>
+            <li>Track your achievements and streaks</li>
+            <li>Send hydration reminders (if enabled)</li>
+            <li>Improve the app experience through analytics</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>We use the following third-party services:</p>
+
+        <div class="highlight-box">
+            <h3>Mixpanel (Analytics)</h3>
+            <p>We use Mixpanel to understand how users interact with our app. This helps us improve features and fix issues. Data collected includes usage patterns, feature interactions, and achievement progress. <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener">Mixpanel Privacy Policy</a></p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>RevenueCat (In-App Purchases)</h3>
+            <p>We use RevenueCat to manage subscriptions and in-app purchases. This service processes purchase transactions and manages subscription status. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Google Fonts</h3>
+            <p>We use Google Fonts to display typography in the app. When fonts are loaded, your device connects to Google servers. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></p>
+        </div>
+
+        <h2>Data Storage & Security</h2>
+        <p>Your hydration data, settings, and achievements are stored locally on your device. We do not store your personal hydration data on our servers. Analytics data is processed by our third-party analytics provider (Mixpanel) according to their privacy practices.</p>
+        <p>We implement appropriate security measures to protect your information, but no method of electronic storage is 100% secure.</p>
+
+        <h2>Your Rights & Choices</h2>
+        <p>You have control over your data:</p>
+        <ul>
+            <li><strong>Delete Your Data:</strong> You can delete all your data at any time through the app's Settings by selecting "Clear All Data"</li>
+            <li><strong>Manage Reminders:</strong> You can enable or disable hydration reminders in Settings</li>
+            <li><strong>Update Information:</strong> You can update your profile information (weight, activity level, goals) at any time</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>Happy Chabby is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can delete such information.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. We encourage you to review this Privacy Policy periodically.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
+        <p><a href="mailto:alphabornapps@gmail.com">alphabornapps@gmail.com</a></p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../assets/images/mascot/hydration-states/mid.png" alt="Chabby"> Happy Chabby
+            </div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="mailto:alphabornapps@gmail.com">Contact Us</a>
+                <a href="mailto:alphabornapps@gmail.com">Support</a>
+            </div>
+            <p class="footer-copy">&copy; 2025 Happy Chabby. All rights reserved. Stay hydrated!</p>
+        </div>
+    </footer>
+</body>
+</html>
